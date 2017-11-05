@@ -461,13 +461,14 @@
 	}
 
 	.member-name {
-		margin: 5px 0;
 		font-size: 16px;
 		font-weight: bold;
 		font-family: MuseoSansCyrl500;
+		margin-top: 16px;
 	}
 
 	.member-scope {
+		padding-top: 4px;
 		font-size: 13px;
 		color: #404040;
 		opacity: 0.3;
@@ -540,10 +541,6 @@
 			margin-top: 24px;
 		}
 
-		.senate-member:nth-child(1) {
-			margin-top: 16px;
-		}
-
 		.member-scope {
 			opacity: 1;
 		}
@@ -555,8 +552,6 @@
 		.all-doc-link {
 			font-size: 13px;
 		}
-
-
 	}
 
 	/* BRANCHS */
@@ -675,6 +670,10 @@
 		.tagline-descr {
 			font-size: 16px;
 		}
+
+		.member-scope-mobile {
+			opacity: 0.3;
+		}
 	}
 
 	/* FOOTER */
@@ -699,7 +698,12 @@
 		font-size: 12px;
 	}
 
-		/****** DARK HEADER  ******/
+	/***********************/
+	/****** RADA PAGE ******/
+	/***********************/
+
+
+	/****** DARK HEADER  ******/
 
 	.dark-header {
 		background-color: #252061;
@@ -708,7 +712,30 @@
 	.all-navbar {
 		height: 85px;
 	}
+	
+	/* RADA section */
 
+	.rada {
+		background-color: #fff;
+	}
+	
+	@media (max-width: 768px) {
+		.rada {
+			background-color: #f5f5f5;;
+		}
+
+		.member-img-mobile img{
+			width: 96px;
+			height: 96px;
+		}
+
+		.member-scope-mobile {
+			padding-top: 4px;
+		}
+
+
+	}
+	
 	/* POSTS section */
 	
 	.posts {
@@ -733,9 +760,16 @@
 		padding-top: 5px;
 	}
 
-	/* RADA PAGE */
+	/* FOOTER-WHITE */
 
-	.rada {
-		background-color: #f5f5f5;
+	.footer-white {
+		margin-top: 350.8px;
 	}
+
+	@media (max-width: 768px) {
+		.footer-white {
+			margin-top: 36px;
+	}
+	}
+
 	
