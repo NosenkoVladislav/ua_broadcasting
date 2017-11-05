@@ -1,0 +1,34 @@
+	/* DARK HEADER  */
+
+	.dark-header {
+		background-color: #24235f;
+	}
+
+	.all-navbar {
+		height: 85px;
+	}
+
+	/* POSTS section */
+	
+	.posts {
+		padding-bottom: 40px;
+	}
+
+	.posts-tagline {
+		padding: 20px 0;
+	}
+
+	.post {
+		margin: 12px 5px;
+		padding: 0 5px 5px 5px;
+	}
+
+	.post-name {
+		margin-top: 5px;
+		font-weight: bold;
+	}
+
+	.post-date {
+		padding-top: 5px;
+	}
+
