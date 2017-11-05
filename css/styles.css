@@ -30,6 +30,12 @@
 		font-size: 13px;
 	}
 
+	@media (max-width: 768px) {
+		.tagline {
+			font-size: 24px;
+		}
+	}
+
 	/* HEADER */
 	
 	.content {
@@ -58,6 +64,13 @@
 	.logo-nav {
 	 	width: 236px;
 	 	height: 40px;
+	}
+
+	@media (max-width: 768px) {
+		.logo-nav {
+	 		width: 177px;
+	 		height: 30px;
+		}
 	}
 	
 	.nav-icons {
@@ -192,7 +205,7 @@
 
 	.all-news-link a{
 		float: right;
-		font-size: 16px;
+		font-size: 13px;
 		font-weight: bold;
 		padding-top: 20px;
 		padding-right: 2px;
@@ -250,6 +263,20 @@
 		padding-top: 10px;
 	}
 
+	@media (max-width: 768px) {
+		.numbers {
+			padding: 20px 0 50px 0
+		}
+
+		.numbers-title {
+			font-size: 35px;
+		}
+
+		.numbers-line {
+			font-size: 50px;
+		}
+	}
+
 	/* LEADERSHIP SECTION */
 	
 	.leadership {
@@ -263,14 +290,37 @@
 
 	.leadership-name a {
 		display: inline-block;
+		font-family: MuseoSansCyrl500;
 		font-size: 16px;
 		font-weight: bold;
-		color: #0f9bcc;
+		color: #24a3d3;
 		padding: 15px 0 5px 0;
 	}
 
 	.leadership-descr {
-		font-size: 14px;
+		font-size: 13px;
+		color: #404040;
+	}
+
+	.all-leadership-link {
+		float: right;
+		font-size: 13px;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-right: 2px;
+	}	
+
+	@media (max-width: 768px) {
+		.leadership {
+			margin-top: 0px;
+		}
+		.leadership-member {
+			margin: 12px 0;
+		}
+
+		.leadership-name a {
+			padding: 0;
+		}
 	}
 
 	/* PRIORITY PROJECTS */
@@ -283,10 +333,10 @@
 	.project {
 		width: 100%;	
 	}
+
 	.project-img {
 		height: 224px;
-		overflow: hidden;
-		object-fit: 
+		overflow: hidden; 
 	}
 
 	.project-name {
@@ -297,6 +347,32 @@
 		font-size: 16px;
 		font-weight: bold;
 		color: #0f9bcc;
+	}
+
+	.priority-control {
+		display: inline-block;
+		width: 32px;
+		height: 2px;
+		border-radius: 4px;
+ 		background-color: #dedede;
+ 		margin: 0 4px;
+ 		margin-top: 16px;
+	}
+
+	.priority-control-active {
+		background-color: #24a3d3;
+	}
+
+	@media (max-width: 768px) {
+		.priority-projects {
+			margin-top: 32px;
+			margin-bottom: 32px;
+		}
+
+		.project-img {
+			height: auto;
+			overflow: hidden; 
+		}
 	}
 
 	/* PRESS-RELEASES */
@@ -310,22 +386,57 @@
 	}
 
 	.press-releases-title {
-		position: relative;
-		z-index: 2;
+		font-size: 28px;
+		font-family: MuseoSansCyrl500;
 	}
 
 	.press-release {
 		margin-top: 20px;
 		margin-bottom: 40px;
+		z-index: 2;
+		position: relative;
 	}
 
 	.transparent-tag {
-		opacity: 0.4;
+		opacity: 0.3;
+		color: #fff;
+		margin: 0;
 	}
 
 	.all-press-link {
 		float: right;
 		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.press-date {
+		color: #fff;
+		opacity: 0.3;
+		z-index: 2;
+		position: relative;
+	}
+
+	@media (max-width: 768px) {
+		.press-releases {
+			padding-top: 40px;
+    		padding-bottom: 40px;
+		}
+
+		.press-release {
+			margin-top: 24px;
+			margin-bottom: 17px;
+			font-size: 13px;
+		}
+
+		.press-releases-title {
+			font-size: 13px;
+			font-family: MuseoSansCyrl300;
+		}
+
+		.all-press-link {
+			font-size: 13px;
+		}
+		
 	}
 
 	/* SENATE SECTION */
@@ -335,7 +446,7 @@
 	}
 
 	.senate-member {
-		margin: 10px 0;
+		margin-top: 32px;
 	}
 
 	.member-img img{
@@ -353,11 +464,13 @@
 		margin: 5px 0;
 		font-size: 16px;
 		font-weight: bold;
+		font-family: MuseoSansCyrl500;
 	}
 
 	.member-scope {
-		font-size: 14px;
-		color: #ccc;
+		font-size: 13px;
+		color: #404040;
+		opacity: 0.3;
 	}
 	
 	.doc-wrapper {
@@ -369,11 +482,10 @@
 	}
 
 	.doc-btn {
-		font-size: 16px;
+		font-family: MuseoSansCyrl500;
+		font-size: 14px;
 		border: 1px solid #24a3d3;
-		width: 100%;
-		height: 32px;
-		line-height: 32px;
+		padding: 8px 40px;
 	}
 
 	.doc-btn-active {
@@ -392,19 +504,60 @@
 	}
 
 	.protocol {
-		margin: 12px 0 ;
+		margin: 12px 0;
+		font-family: MuseoSansCyrl500;
 	}
 
 	.protocol:nth-child(1) {
 		margin-top: 20px;
 	}
 
-	.all-doc-link {
-		margin-top: 10px;
-		float: right;
-		font-size: 16px;
+	.protocol-date {
+		font-size: 13px;
 	}
 
+	.all-doc-link {
+		float: right;
+		font-size: 16px;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-right: 2px;
+	}
+
+	.all-senate-link {
+		float: right;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	
+	@media (max-width: 768px) {
+		.senate {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+		.senate-member {
+			margin-top: 24px;
+		}
+
+		.senate-member:nth-child(1) {
+			margin-top: 16px;
+		}
+
+		.member-scope {
+			opacity: 1;
+		}
+
+		.doc-btn {
+			padding: 8px 29px;
+		}
+
+		.all-doc-link {
+			font-size: 13px;
+		}
+
+
+	}
 
 	/* BRANCHS */
 
@@ -414,38 +567,68 @@
 		position: relative;
 		padding-top: 60px;
 		padding-bottom: 70px;
+		font-family: MuseoSansCyrl500;
 	}
 	
 	.branchs-tag {
+		color: #fff;
 		opacity: 0.3;
-		padding: 0px 0px 30px 0;
 		position: relative;
 		z-index: 2;
+		margin-bottom: 30px;
 	}
 
 	.branch {
+		font-size: 14px;
 		margin: 10px 0 10px 0;
 		position: relative;
 		z-index: 2;
 	}
 
 	.branch-site a {
+		font-size: 13px;
+		color: #24a3d3;
 		text-decoration: underline;
 	}
 
 	.circle-wrapper {
 		position: absolute;
 		z-index: 1;
-		left: -10px;
+		left: 8%;
 		top: 0;
 	}
 
 	.circle {
-		height: 200px;
-		width: 200px;
+		height: 164.4px;
+		width: 164.4px;
 		border-radius: 50%;
-		background-color: #263671;
-		margin-top: 66px;
+		background-color: #2489bc;
+		opacity: 0.2;
+		margin-top: 64px;
+	}
+
+	.circle:nth-child(1) {
+		margin-top: 55px;
+	}
+
+	.all-branchs-link {
+		float: right;
+		font-size: 16px;
+		font-weight: bold;
+		padding-top: 20px;
+		padding-right: 2px;
+	}
+
+	@media (max-width: 768px) {
+		.branchs {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+
+		.branchs-tag {
+			margin-bottom: 0;
+		}
+
 	}
 
 	/* GET-IN SECTION */
@@ -459,11 +642,16 @@
 		padding-bottom: 30px;
 	}
 	
+	.tagline-descr {
+		font-family: MuseoSansCyrl500;
+		font-size: 24px;
+		color: #404040;
+	}
+
 	.get-in-link-wrapper {
-		font-size: 20px;
+		font-size: 18px;
+		font-family: MuseoSansCyrl500;
 		text-align: center;
-		font-weight: 400;
-		width: 100%;
 		height: 48px;
 		line-height: 48px;
 		background-color: #24a3d3;
@@ -476,6 +664,17 @@
 
 	.get-in-link-wrapper:hover {
 		cursor: pointer;		
+	}
+
+	@media (max-width: 768px) {
+		.get-in {
+			padding-top: 33px;
+			padding-bottom: 32px;
+		}
+
+		.tagline-descr {
+			font-size: 16px;
+		}
 	}
 
 	/* FOOTER */
